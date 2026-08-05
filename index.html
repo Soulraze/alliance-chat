@@ -76,7 +76,7 @@ async function login() {
         .select("*")
         .eq("username", username)
         .eq("password", password);
-
+  console.log(data, error);
     if (data.length > 0) {
         alert("Вход выполнен");
     } else {
